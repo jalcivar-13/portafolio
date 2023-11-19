@@ -1,4 +1,4 @@
-/* Establecer color de fondo */
+/* Establece el color de fondo */
 body {
     background-color: antiquewhite;
 }
@@ -19,7 +19,7 @@ body {
     float: left;
 }
 
-/* Estilos para la información */
+/* Estilos para presentar mi nombre */
 .informacion {
     width: auto;
     height: 10px;
@@ -30,7 +30,7 @@ body {
 /* Estilos para la barra de navegación */
 .barra-navegacion {
     display: inline-block; /* Evita que la barra de navegación ocupe todo el ancho */
-    margin-left: 600px;
+    margin-left: 500px; /*especifica el margen para iniciar la barra de navegacion con sus opciones*/
 }
 
 /* Estilos para los enlaces dentro de la barra de navegación */
@@ -48,12 +48,14 @@ body {
     color: black;
 }
 
+
 /* Sección "Sobre Mí" */
 #sobre_mi {
     border: 4px solid #333; /* Añade un borde negro de 2 píxeles alrededor del elemento */
 }
 
-#sobremi {
+/*Cambia el tipo de letra y alineacion*/
+#sobre_mi_title {
     font-family: "Homer Simpson UI";
     text-align: center;
     color: #333;
@@ -64,34 +66,41 @@ body {
     overflow: hidden; /* Para manejar el float */
 }
 
+/* centra el id desc*/
 #desc {
     margin-left: 0px;
     text-align: center;
 }
 
+/* da estilo a la fotoretrato de quien soy*/
 #fotoretrato {
-    float: left;
-    margin-right: 20px;
-    border: 4px solid #333; /* Añade un borde negro de 2 píxeles alrededor del elemento */
+    margin-left: 100px;/*margen aplicado para centrar mas la imagen*/
+    float: left; /*manda a la izquierda a la imagen*/
+    margin-right: 20px;/*margen aplicado*/
+    border: 2px solid #333; /* Añade un borde negro de 2 píxeles alrededor del elemento */
     border-radius: 50%; /* Hace circular la imagen */
     overflow: hidden; /* Oculta las esquinas redondeadas adicionales */
 }
 
+/* manda en un 30% a la derecha el id quien_soy*/
 #quien_soy {
     color: black;
+    margin-left: 30%;
     text-align: justify;
 }
 
-.listas {
+#metas{
     margin-left: 30%;
+
+}
+
+.listas {
+    margin-left: 30%; /*separa de la izquierda a derecha en un 30% de la pantalla*/
     text-align: left;
 }
 
 
-
-
-/*Seccion portafolio*/
-/* Sección portafolio */
+/* Sección "Portafolio" */
 #portafolio {
     display: flex; /* Utiliza un contenedor flexible */
     border: 4px solid #333; /* Añade un borde negro de 2 píxeles alrededor del elemento */
@@ -99,6 +108,7 @@ body {
     justify-content: space-between; /* Distribuye los elementos flexibles de manera que haya espacio entre ellos */
     align-items: center; /* Centra verticalmente los elementos flexibles */
 }
+/*Asigna distintos estilos visuales */
 
 h1 {
     color: #333;
@@ -119,12 +129,10 @@ li {
     color: #008080;
 }
 
-.skills {
-    margin-top: 20px;
-}
 
-#porta {
-    width: 45%; /* Ancho del div #porta */
+
+#tecnologias_utilizadas {
+    width: 45%; /* Ancho del div #tecnologias_utilizadas */
 }
 
 #tecno {
@@ -137,21 +145,7 @@ li {
 
 
 
-#volver-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
 /* Sección "Contacto" */
-
 #contacto {
     float: left;
     text-align: center;
@@ -164,6 +158,7 @@ li {
     border: 4px solid #333; /* Añade un borde negro de 2 píxeles alrededor del elemento */
 }
 
+/*Aplica distintos estilos para visualizacion */
 #contacto h2 {
     color: white;
 }
@@ -183,22 +178,38 @@ li {
     transition: background-color 0.3s ease;
 }
 
-
-#contacto a img { /*Centra horizontal y verticalmente las imagenes */
+#contacto a img {
     display: block;
     margin: 0 auto;
 }
 
-#contacto a:hover {/*Al pasar sobre el logo cambia de color */
+#contacto a:hover {
     background-color: #ddd;
 }
 
-#ws {/*Estilo para la clase ws , para visualizar el numero de telefono*/
+#ws {
     color: aliceblue;
     line-height: 65%;
 }
 
-#volver-btn:hover {/*Estilos para el boton para regresar al inicio*/
+
+/*Crea y permite a un boton estar siempre en la pantalla*/
+/*Se aplican estilos correspondientes a los colores del sitio web*/
+
+#volver-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Al colocar el cursor sobre el boton, cambiara de color*/
+#volver-btn:hover {
     background-color: #ddd;
     color: black;
 }
